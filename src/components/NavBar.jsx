@@ -3,12 +3,21 @@ import { Link } from "react-router-dom"
 import Button from "./Button"
 import menu_open from "../assets/img/Menu vector.svg"
 import menu_close from "../assets/img/close.svg"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 // eslint-disable-next-line react/prop-types
 const NavBar = ({LinkColor}) => {
 
   const[menuStatus, setMenuStatus] = useState("close")
+
+  useEffect(()=>{
+    if(menuStatus === "open"){
+      document.body.style.overflow = "hidden"
+    } else{
+      document.body.style.overflow = ""
+    }
+
+  },[menuStatus, setMenuStatus])
 
   const toggleMenu = () =>{
     if(menuStatus === "close"){
@@ -78,7 +87,7 @@ const NavBar = ({LinkColor}) => {
                       <path d="M3.29412 1L15.8235 1.17647M15.8235 1.17647L16 13.7059M15.8235 1.17647L1 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </Link>  
-                  <Link to={"/calls"} onClick={()=>toggleMenu()} className="text-white md:text-md text-3xl border-b-1 border-white !py-10 !px-2 flex w-full justify-between items-center">
+                  <Link to={"/service"} onClick={()=>toggleMenu()} className="text-white md:text-md text-3xl border-b-1 border-white !py-10 !px-2 flex w-full justify-between items-center">
                     Services
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.29412 1L15.8235 1.17647M15.8235 1.17647L16 13.7059M15.8235 1.17647L1 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -92,8 +101,8 @@ const NavBar = ({LinkColor}) => {
                   </Link>
                 </div>
 
-                <div className="!mt-10">
-                  <Button Btn_text={"Start Learning"} Btn_type={"primary"}></Button>
+                <div className="!mt-10" onClick={()=>toggleMenu()}>
+                  <Button Btn_text={"Join Telegram"} Btn_type={"primary"} href={"/calls"}></Button>
                 </div>
 
             </div>

@@ -31,7 +31,7 @@ const Footer = ({marginTop}) => {
         <div className="md:w-[50%] flex flex-col items-start md:items-end justify-center gap-5 text-white !mt-10">
           <Link to={"/"}>Home</Link>
           <Link to={"/about"}>About Us</Link>
-          <Link to={"/course"}>Services</Link>
+          <Link to={"/service"}>Services</Link>
           <Link to={"/contact"}>Contact</Link>
         </div>
 

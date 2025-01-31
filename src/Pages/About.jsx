@@ -40,8 +40,8 @@ const About = () => {
 
         {/* Contact Information */}
         <div className="flex gap-4 flex-col md:flex-row">
-          <Button Btn_type={"primary"} Btn_text={"📲 Connect WhatsApp"} additional_class={"text-base"}></Button>
-          <Button Btn_type={"secondary"} Btn_text={"📩 Join Telegram"} additional_class={"w-full !text-base"}></Button>
+          <Button Btn_type={"primary"} Btn_text={"📩 Join Telegram"} additional_class={"text-base"} href={"/calls"}></Button>
+          <Button Btn_type={"secondary"} Btn_text={"📲 Connect WhatsApp"} additional_class={"w-full !text-base"} href={"https://api.whatsapp.com/send/?phone=9355166193&text&type=phone_number&app_absent=0"}></Button>
         </div>
 
       </div>

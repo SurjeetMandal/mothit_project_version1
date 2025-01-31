@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <div>
       <NavBar LinkColor={"text-black"}/>
-      <Services paddingTop={"!pt-24"}/>
+      <Services paddingTop={"lg:!pt-30 !pt-10"}/>
       <HowItWork />
       <Footer marginTop={"!mt-40"} />
     </div>

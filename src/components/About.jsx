@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import about_img from "../assets/img/AboutUs Img.svg"
 
 const About = () => {
@@ -13,9 +14,11 @@ const About = () => {
             we providing best stock market intraday calls on our premium channel with proper analysis from our team with proper entry/exit time and price and proper stoploss
             we providing best demat account handling (PMS) in option trading on monthly basis upto 40% on your capital.
           </p>
-          <p className="read_more !mt-6 text-sm text-[var(--text_light)] cursor-pointer">
-            Read more&nbsp; →
-          </p>
+          <Link to={"/about"}>
+            <p className="read_more !mt-6 text-sm text-[var(--text_light)] cursor-pointer">
+              Read more&nbsp; →
+            </p>
+          </Link>
         </div>
         <div className="w-full md:w-[50%] relative md:right-5">
           <img src={about_img} alt="" className="rounded-lg"/>

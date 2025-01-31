@@ -48,7 +48,7 @@ const Course = () => {
                     </div>
                 </div>
 
-                <Button Btn_type={""} Btn_text={"View Course"}></Button>
+                <Button Btn_type={""} Btn_text={"View Course"} href={"/course"}></Button>
             </div>
 
         </div>

@@ -24,7 +24,7 @@ const HowItWork = () => {
         <p className="heading2">
             How It Work&apos;s
         </p>
-        <p className="short_description2">
+        <p className="short_description2 text-center">
             Everything you need to know before starting you Journey.
         </p>
       </div>
