@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary: #F7F9FC;
+  --secondary: #5077FF;
+  --accent: #FF6F61;
+  --text_normal: #313131;
+  --text_light: #7474749c;
+}
+
+*{
+  font-family: "Outfit", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body,html{
+  background-color: var(--primary);
+}
+
+.myContainer{
+  padding: 0px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .myContainer{
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .myContainer{
+    padding: 0px 100px;
+  }
+}
+
+.heading2{
+  font-size: 64px;
+  color: var(--text_normal);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 465px) { 
+  .heading2{
+    font-size: 34px;
+    color: var(--text_normal);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .heading2{
+    font-size: 40px;
+    color: var(--text_normal);
+    font-weight: 600;
+  }
+}
+
+.short_description2{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text_normal);
+}
+
+.custom-dotted-border {
+  border:2px dotted var(--text_normal);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
