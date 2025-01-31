@@ -41,9 +41,9 @@ const Header = () => {
                 <p className="short_description text-base !mt-5 text-[var(--text_normal)]">
                     🔍 Master the Art of Trading Join our exclusive community to explore the world of Futures and Options Trading with expert insights, daily market updates, and actionable strategies.  
                 </p>
-                <div className="button_container flex gap-4 !pt-8">
-                    <Button Btn_type={"primary"} Btn_text={"Get Started Today"} additional_class={"text-sm !px-5"}></Button>
-                    <Button Btn_type={"secondary"} Btn_text={"Learn More"}></Button>
+                <div className="button_container flex gap-3 !pt-8">
+                    <Button Btn_type={"primary"} Btn_text={"Join Telegram"} href={"/calls"} additional_class={"text-sm !px-5"}></Button>
+                    <Button Btn_type={"secondary"} Btn_text={"🚀 Book Free 1:1 Session"}></Button>
                 </div>
                 <div className="turstPilot !pt-12">
                     <img src={trustPilot} alt="" />
