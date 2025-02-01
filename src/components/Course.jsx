@@ -3,11 +3,17 @@ import cousse_img from "../assets/img/Course.jpg"
 import trustpilot from "../assets/img/Course_trust.svg"
 import star from "../assets/img/Star.svg"
 import Button from "./Button"
+import { motion } from "motion/react"
 
 const Course = () => {
   return (
     <div>
-      <div className="myContainer !mt-40 flex flex-col items-center">
+      <motion.div className="myContainer !mt-40 flex flex-col items-center"
+        viewport={{once:true}}
+        initial={{y:50, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{delay:0.5, duration:0.4}}  
+      >
         <img src={course_vector} alt="" className="w-15"/>
         <p className="heading2 text-center">
             Our Trending Course
@@ -15,9 +21,14 @@ const Course = () => {
         <p className="short_description2 text-center">
             Start from scratch. Learn step by step & Make your best Portfolio
         </p>
-      </div>
+      </motion.div>
 
-      <div className="myContainer !mt-15 flex justify-center">
+      <motion.div className="myContainer !mt-15 flex justify-center"
+        viewport={{once:true}}
+        initial={{y:90, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{delay:0.5, duration:0.4}}  
+      >
         <div className="course_container bg-white !p-4 flex flex-col md:flex-row md:gap-5 lg:gap-15 gap-6 h-full md:max-w-[1000px] rounded-lg shadow-xl">
 
             <div className="img_container rounded-md md:w-[40%]">
@@ -52,7 +63,7 @@ const Course = () => {
             </div>
 
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

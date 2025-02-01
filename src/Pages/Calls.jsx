@@ -3,6 +3,7 @@ import callImg from "../assets/img/Calls.svg"
 import WhyJoin from "../components/WhyJoin";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import { motion } from "motion/react"
 
 const SubscriptionPrize = [
   {
@@ -28,13 +29,24 @@ const Calls = () => {
     <NavBar LinkColor={"text-black"}/>
 
     <div className="myContainer flex justify-center !pt-10 md:!pt-20 flex-col">
-      <p className="heading text-center text-3xl md:text-5xl text-[var(--text_normal)] font-semibold md:!mt-10">
+      <p className="heading text-center text-3xl md:text-5xl text-[var(--text_normal)] font-semibold md:!mt-10"
+      >
         TECHACK PREMIUM SUBSCRIPTION 🎉🔥
       </p>
 
-      <di className="!mt-20 flex flex-col md:flex-row gap-5">
-        <img src={callImg} alt="" className="md:w-[50%] lg:w-[40%]"/>
-        <div className="md:w-[50%] lg:w-[60%]">
+      <div className="!mt-20 flex flex-col md:flex-row gap-5">
+        <motion.img src={callImg} alt="" className="md:w-[50%] lg:w-[40%]"
+          viewport={{once:true}}
+          initial={{x:-90, opacity:0}}
+          whileInView={{x:0, opacity:1}}
+          transition={{ duration:0.4}}  
+        />
+        <motion.div className="md:w-[50%] lg:w-[60%]"
+          viewport={{once:true}}
+          initial={{x:90, opacity:0}}
+          whileInView={{x:0, opacity:1}}
+          transition={{ duration:0.4}}
+        >
           <p className="text-2xl font-medium text-[var(--text_normal)] text-center md:text-start">Limited-time special offer - Elevate your trading journey at the best price ever!</p>
           <div className="flex flex-wrap gap-2 !mt-10 !mb-15">
           {
@@ -46,13 +58,18 @@ const Calls = () => {
           }
           </div>
           <Button Btn_type={"primary"} Btn_text={"Book You Subscription Now"} additional_class={"w-full"}></Button>
-        </div>
-      </di>
+        </motion.div>
+      </div>
     </div>
 
     <WhyJoin />
 
-    <div className="myContainer flex flex-col items-center text-center !mt-40 !py-20">
+    <motion.div className="myContainer flex flex-col items-center text-center !mt-40 !py-20"
+      viewport={{once:true}}
+      initial={{y:90, opacity:0}}
+      whileInView={{y:0, opacity:1}}
+      transition={{ duration:0.4}}  
+    >
       <p className="text-3xl md:text-5xl font-semibold text-[var(--text_normal)]">
         📲 Get Started Now!
       </p>
@@ -60,7 +77,7 @@ const Calls = () => {
         Join our Premium Channel Today and ride the market waves! 🌊📊
       </p>
       <Button href={"https://wa.me/9355166193"} Btn_text={"📞 WhatsApp Now"} Btn_type={"secondary"} additional_class={"!mt-6"}></Button>
-    </div>
+    </motion.div>
 
     <Footer marginTop={"!mt-40"} />
     </>

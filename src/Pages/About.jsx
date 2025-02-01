@@ -2,6 +2,7 @@ import Footer from "../components/Footer"
 import NavBar from "../components/NavBar";
 import aboutImg from "../assets/img/AboutMeImg.svg"
 import Button from "../components/Button";
+import { motion } from "motion/react"
 
 const About = () => {
   return (
@@ -10,7 +11,12 @@ const About = () => {
 
       <div className="myContainer flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:!pt-30 !pt-10">
 
-      <div className="w-full md:w-[60%] text-center md:text-left">
+      <motion.div className="w-full md:w-[60%] text-center md:text-left"
+        initial={{x: -100, opacity:0}}
+        whileInView={{x:0 , opacity:1}}
+        transition={{duration:0.4}}
+        viewport={{once: true}}
+      >
         
         {/* Heading */}
         <p className="text-4xl md:text-5xl font-extrabold text-[var(--text_normal)] !mb-6 text-start">
@@ -44,17 +50,22 @@ const About = () => {
           <Button Btn_type={"secondary"} Btn_text={"📲 Connect WhatsApp"} additional_class={"w-full !text-base"} href={"https://api.whatsapp.com/send/?phone=9355166193&text&type=phone_number&app_absent=0"}></Button>
         </div>
 
-      </div>
+      </motion.div>
 
-      <div className="w-full md:w-[40%]">
+      <motion.div className="w-full md:w-[40%]"
+        initial={{x: 100, opacity:0}}
+        whileInView={{x:0 , opacity:1}}
+        transition={{duration:0.4}}
+        viewport={{once: true}}
+      >
         <img 
           src={aboutImg} 
           alt="Stock Market Trading" 
           className="w-full md:h-[500px] h-[300px]"
         />
-      </div>
+      </motion.div>
 
-    </div>
+      </div>
 
       <Footer marginTop={"!mt-40"} />
     </div>

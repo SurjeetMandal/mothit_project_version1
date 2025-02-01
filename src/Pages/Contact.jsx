@@ -2,6 +2,7 @@ import Footer from "../components/Footer"
 import NavBar from "../components/NavBar";
 import contact1 from "../assets/img/contact1.svg";
 import contact3 from "../assets/img/contact3.svg";
+import { motion } from "motion/react"
 
 const Contact = () => {
   return (
@@ -9,13 +10,22 @@ const Contact = () => {
         <NavBar LinkColor={"text-black"}/>
 
         <div className="myContainer !pt-20 md:!pt-40 flex item-center flex-col">
-          <p className="text-5xl text-[var(--text_normal)] font-semibold text-center">
+          <motion.p className="text-5xl text-[var(--text_normal)] font-semibold text-center"
+            initial={{y: 80, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{duration:0.4}}
+          >
             Get in touch.
-          </p>
+          </motion.p>
 
           <div className="myContainer !pt-10 md:!pt-20 ">
 
-            <div className="bg-[#FFDDDA] !p-6 w-full rounded-md flex flex-col md:flex-row gap-10">
+            <motion.div className="bg-[#FFDDDA] !p-6 w-full rounded-md flex flex-col md:flex-row gap-10"
+              initial={{y: 80, opacity:0}}
+              whileInView={{y:0, opacity:1}}
+              transition={{duration:0.6}}
+              viewport={{once: true}}
+            >
 
               <div className="md:w-[50%]">
                 <p className="text-3xl text-[var(--text_normal)]">Drop Us a message</p>
@@ -24,7 +34,11 @@ const Contact = () => {
                 <input type="email" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm" placeholder="Email" />
                 <input type="text" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm" placeholder="Subject" />
                 <textarea name="" id="" placeholder="Write Your Message Here" className="bg-white !p-2 !mt-4 w-full rounded-sm h-30"></textarea>
-                <button className="bg-[var(--accent)] cursor-pointer !px-6 !py-2 rounded-sm text-white w-full !mt-6">Submit Your Message</button>
+                <motion.button className="bg-[var(--accent)] cursor-pointer !px-6 !py-2 rounded-sm text-white w-full !mt-6"
+                  whileHover={{scale: 1.05}}
+                  whileTap={{scale: 0.95}}
+                  viewport={{once: true}}
+                >Submit Your Message</motion.button>
               </div>
 
               <div className="md:w-[40%]">
@@ -40,7 +54,7 @@ const Contact = () => {
 
               </div>
 
-            </div>
+            </motion.div>
 
           </div>
         </div>

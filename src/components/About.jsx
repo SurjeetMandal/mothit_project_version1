@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom"
 import about_img from "../assets/img/AboutUs Img.svg"
+import { motion } from "motion/react"
 
 const About = () => {
   return (
     <>
-      <div className="myContainer !mt-40 flex flex-col-reverse md:flex-row items-center">
+      <motion.div className="myContainer !mt-40 flex flex-col-reverse md:flex-row items-center"
+        viewport={{once:true}}
+        initial={{y:90, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{delay:0.5, duration:0.4}}  
+      >
         <div className="w-full md:w-[50%] !p-6 md:shadow-md shadow-4xl z-40 md:left-5 relative bg-white md:bg-transparent md:backdrop-blur-xl md:backdrop-filter md:border-[var(--primary)] md:border-2 rounded-md">
           <p className="title text-4xl font-medium text-[var(--text_normal)]">
             About Us
@@ -23,7 +29,7 @@ const About = () => {
         <div className="w-full md:w-[50%] relative md:right-5">
           <img src={about_img} alt="" className="rounded-lg"/>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

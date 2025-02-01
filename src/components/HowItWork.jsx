@@ -1,4 +1,5 @@
 import offering_img from "../assets/img/How it work vector.svg"
+import { motion } from "motion/react"
 
 const HowItWOrkArray = [
     {
@@ -19,7 +20,12 @@ const HowItWork = () => {
   return (
     <div>
       <>
-      <div className="myContainer !mt-40 flex flex-col items-center">
+      <motion.div className="myContainer !mt-40 flex flex-col items-center"
+        initial={{y: 80, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{duration:0.5, delay:0.4}}
+        viewport={{once: true}}
+      >
         <img src={offering_img} alt="" />
         <p className="heading2">
             How It Work&apos;s
@@ -27,19 +33,27 @@ const HowItWork = () => {
         <p className="short_description2 text-center">
             Everything you need to know before starting you Journey.
         </p>
-      </div>
+      </motion.div>
 
       <div className="myContainer">
-        <div className="offering_card_container flex gap-4 flex-wrap justify-center !mt-15">
+        <motion.div className="offering_card_container flex gap-4 flex-wrap justify-center !mt-15"
+          initial={{y: 80, opacity:0}}
+          whileInView={{y:0, opacity:1}}
+          transition={{duration:0.5,}}
+          viewport={{once: true}}
+        >
             {
                 HowItWOrkArray.map((item,index)=>(
-                    <div key={index} className="bg-white min-w-[300px] md:w-[300px] !p-4 custom-dotted-border rounded-md">
+                    <motion.div key={index} className="bg-white min-w-[300px] md:w-[300px] !p-4 custom-dotted-border rounded-md"
+                      whileHover={{rotate:2}}
+                      whileTap={{rotate:2}}
+                    >
                         <p className="text-xl text-[var(--text_normal)] font-medium">{item.Title}</p>
                         <p className="text-sm !mt-2 text-[var(--text_normal)]">{item.Description}</p>
-                    </div>
+                    </motion.div>
                 ))
             }
-        </div>
+        </motion.div>
       </div>
     </>
     </div>

@@ -1,5 +1,6 @@
 import services_img from "../assets/img/Hero star vector.svg"
 import Button from "./Button";
+import { motion } from "motion/react"
 
 const servicesOffered = [
     {
@@ -44,7 +45,12 @@ const servicesOffered = [
 const Services = ({paddingTop}) => {
   return (
     <>
-      <div className={`myContainer ${paddingTop} flex flex-col items-center`}>
+      <motion.div className={`myContainer ${paddingTop} flex flex-col items-center`}
+        viewport={{once:true}}
+        initial={{y:50, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{delay:0.2, duration:0.4}}  
+      >
         <img src={services_img} alt="" className="w-15"/>
         <p className="heading2 text-center">
             Our Services
@@ -52,9 +58,14 @@ const Services = ({paddingTop}) => {
         <p className="short_description2 text-center">
             Everything we provide you to help you grow your portfolio.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="myContainer flex gap-10 flex-wrap justify-center !mt-15 items-start">
+      <motion.div className="myContainer flex gap-10 flex-wrap justify-center !mt-15 items-start"
+        viewport={{once:true}}
+        initial={{y:90, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{delay:0.4, duration:0.4}}  
+      >
         {
             servicesOffered.map((item, index)=>(
                 <div key={index} className="w-full md:w-[300px] bg-white !p-4 shadow-xl rounded-lg border-gray-300 border-2">
@@ -64,7 +75,7 @@ const Services = ({paddingTop}) => {
                 </div>
             ))
         }
-      </div>
+      </motion.div>
     </>
   )
 }
