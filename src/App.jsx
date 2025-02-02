@@ -7,7 +7,9 @@ import Service from './Pages/Service';
 import Course from './Pages/Course';
 import Portfolio from './Pages/Portfolio';
 import Calls from './Pages/Calls';
+import Contact2 from "./Pages/Contact2"
 import './index.css';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   const location = useLocation();
@@ -19,10 +21,12 @@ const App = () => {
 
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact2" element={<Contact2 />} />
         <Route path="/service" element={<Service />} />
         <Route path="/course" element={<Course />} />
         <Route path="/portfolio" element={<Portfolio />} />

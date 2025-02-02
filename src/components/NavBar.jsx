@@ -1,4 +1,3 @@
-import logo from "../assets/img/logo.png"
 import { Link } from "react-router-dom"
 import Button from "./Button"
 import menu_open from "../assets/img/Menu vector.svg"
@@ -34,15 +33,17 @@ const NavBar = ({LinkColor}) => {
   
         <div className="logo_navItems flex items-center gap-[54px] h-20">
         
-          <div className="logo w-[120px]">
-            <img src={logo} alt="Logo" />
+          <div className="logo">
+            <Link to={"/"} className="cursor-pointer">
+              <p className="font-bold text-2xl text-[var(--secondary)]">TWT</p>
+            </Link>
           </div>
 
           <div className="navItems flex gap-8">
             <Link to={"/"} className={`text-md ${LinkColor}`}>Home</Link>
-            <Link to={"/about"} className={`text-md ${LinkColor}`}>About me</Link>
             <Link to={"/service"} className={`text-md ${LinkColor}`}>Services</Link>
             <Link to={"/contact"} className={`text-md ${LinkColor}`}>Contact</Link>
+            <Link to={"/about"} className={`text-md ${LinkColor}`}>About me</Link>
           </div>
 
         </div>
@@ -58,7 +59,9 @@ const NavBar = ({LinkColor}) => {
       <div className="myContainer h-15 flex justify-between items-center md:hidden">
 
         <div className="logo w-[80px]">
-          <img src={logo} alt="" />
+          <Link to={"/"} className="cursor-pointer">
+            <p className="font-bold text-xl text-[var(--secondary)]">TWT</p>
+          </Link>
         </div>
 
         <div className="menu_open z-50">

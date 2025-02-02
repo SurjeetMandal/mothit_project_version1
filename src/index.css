@@ -73,3 +73,14 @@
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dadada;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}

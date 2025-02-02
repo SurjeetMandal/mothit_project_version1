@@ -19,7 +19,7 @@ const Course = () => {
         scale:1,
         transition: {duration: 0.3}
       })
-  },[filterNav, setFilterNav])
+  },[controls, filterNav, setFilterNav])
 
   return (
     <div>

@@ -49,6 +49,7 @@ const Contact = () => {
       .then(
         () => {
           toast.success("Your message was submitted successfully!");
+
         },
         () => {
           toast.error("Failed to send the message. Please try again.");
@@ -86,10 +87,7 @@ const Contact = () => {
               <input required type="tel" className="bg-white !p-2 rouded-md !mt-6 w-full rounded-sm" placeholder="Phone number" name="user_phone" />
               <input required type="email" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm" placeholder="Email" name="user_email" />
               <select name="user_subject" id="" required placeholder="subject" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm">
-                <option disabled selected>Select Subject</option>
                 <option>Course</option>
-                <option>Portfolio Management</option>
-                <option>Trading Calls</option>
               </select>
               <textarea required name="message" id="" placeholder="Write Your Message Here" className="bg-white !p-2 !mt-4 w-full rounded-sm h-30" />
               <motion.button
@@ -106,11 +104,11 @@ const Contact = () => {
             <div className="md:w-[40%]">
               <div className="flex items-center gap-3 text-[var(--text_normal)] !mt-0 md:!mt-22">
                 <img src={contact1} alt="" />
-                <p>+91 1023456789</p>
+                <p>+91 9355166193</p>
               </div>
               <div className="flex items-center gap-3 text-[var(--text_normal)] !mt-4">
                 <img src={contact3} alt="" />
-                <p>example45@example.com</p>
+                <p>techack099@gmail.com</p>
               </div>
             </div>
           </motion.div>

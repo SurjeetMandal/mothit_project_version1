@@ -13,7 +13,8 @@ const servicesOffered = [
             <li><strong>Access via Telegram</strong> for real-time support & discussions.</li>
         `,
         CTA: "Know More",
-        CTA_Link: "/course"
+        CTA_Link: "/course",
+        CTA2: "Download Borcher",
     },
     {
         Title: "📈 Option Trading Calls",
@@ -24,7 +25,8 @@ const servicesOffered = [
             <li>Exclusive <strong>Telegram group</strong> with daily updates, charts & insights.</li>
         `,
         CTA: "Know More",
-        CTA_Link: "/calls"
+        CTA_Link: "/calls",
+        CTA2: "",
     },
     {
         Title: "💼 Portfolio Management Services",
@@ -36,13 +38,15 @@ const servicesOffered = [
             <li><strong>Track updates via Telegram</strong> & stay informed about your investments.</li>
         `,
         CTA: "Know More",
-        CTA_Link: "/portfolio"
+        CTA_Link: "/portfolio",
+        CTA2: ""
     }
 ];
 
 
 // eslint-disable-next-line react/prop-types
 const Services = ({paddingTop}) => {
+
   return (
     <>
       <motion.div className={`myContainer ${paddingTop} flex flex-col items-center`}
@@ -72,6 +76,13 @@ const Services = ({paddingTop}) => {
                     <p className="text-2xl text-[var(--text_normal)] font-semibold">{item.Title}</p>
                     <ul dangerouslySetInnerHTML={{ __html: item.AllPoints }} className="!mt-4 list-disc list-inside !mb-6"></ul>
                     <Button Btn_text={item.CTA} Btn_type={""} href={item.CTA_Link}></Button>
+                    {
+                      item.CTA2 === "" ?
+                        <div></div>
+                      :
+                        <Button Btn_text={item.CTA2} Btn_type={"primary"} href={"/contact2"} additional_class={"!mt-2 !text-lg font-semibold"}></Button>
+
+                    }
                 </div>
             ))
         }

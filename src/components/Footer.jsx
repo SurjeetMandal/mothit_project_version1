@@ -23,22 +23,21 @@ const Footer = ({marginTop}) => {
           </p>
 
           <div className="!mt-10">
-          <Link to="/calls">
-          <button 
-          className="text-white relative cursor-pointer 
-          border-[var(--accent)] border-2 !py-3 !px-6 rounded-md 
-          flex gap-5 items-center group/hover hover:bg-[var(--accent)]"
-          >
-            Join Telegram Now
-            <div className="size-5 overflow-hidden">
-              <div className="h-5 flex gap-2 w-10 group-hover/hover:-translate-x-1/2 transition-transform duration-300">
-                <img src={Arrow} alt="" className="w-3"/>
-                <img src={Arrow} alt="" className="w-3"/>
-              </div>
-            </div>
-          </button>
-
-          </Link>
+            <Link to="/calls">
+              <button 
+              className="text-white relative cursor-pointer 
+              border-[var(--accent)] border-2 !py-3 !px-6 rounded-md 
+              flex gap-5 items-center group/hover hover:bg-[var(--accent)]"
+              >
+                Join Telegram Now
+                <div className="size-5 overflow-hidden">
+                  <div className="h-5 flex gap-2 w-10 group-hover/hover:-translate-x-1/2 transition-transform duration-300">
+                    <img src={Arrow} alt="" className="w-3"/>
+                    <img src={Arrow} alt="" className="w-3"/>
+                  </div>
+                </div>
+              </button>
+            </Link>
           </div>
         </div>
 
