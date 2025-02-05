@@ -11,7 +11,7 @@ const About = () => {
       <NavBar LinkColor={"text-black"} />
 
       <div className="w-full flex justify-center">
-        <div className="myContainer 2xl:!pr-0 2xl:!pl-0 flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:!pt-30 !pt-10 max-w-[1440px] mx-auto">
+        <div className="myContainer flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:!pt-30 !pt-10 max-w-[1440px] mx-auto">
           <motion.div
             className="w-full md:w-[60%] text-center md:text-left"
             initial={{ x: -100, opacity: 0 }}
