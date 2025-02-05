@@ -35,7 +35,7 @@ const Header = () => {
                             transition={{delay:0.6}}
                         >
                             <Button Btn_type={"primary"} Btn_text={"👍 Start Trading Journey!"} href={"https://t.me/Tradewithtechack"}></Button>
-                            <Button Btn_type={"secondary"} Btn_text={"🚀 Claim Free 1:1 Expert Session!"} href={'/sessionContact'}></Button>
+                            <Button Btn_type={"secondary"} Btn_text={"🚀 Claim Free 1:1 Expert Session!"} href={"/sessionContact"}></Button>
                         </motion.div>
                         <motion.div className="turstPilot !pt-12"
                             initial={{y:50, opacity:0}}
@@ -81,7 +81,7 @@ const Header = () => {
                     transition={{delay:1.1}}  
                 >
                     <Button Btn_type={"primary"} Btn_text={"👍 Start Trading Journey!"} href={"https://t.me/Tradewithtechack"} additional_class={"text-sm !px-3"}></Button>
-                    <Button Btn_type={"secondary"} Btn_text={"🚀 Claim Free 1:1 Expert Session!"} href={`/sessionContact`} additional_class={'!px-3 !Py-3 w-full'}></Button>
+                    <Button Btn_type={"secondary"} Btn_text={"🚀 Claim Free 1:1 Expert Session!"} href={"/sessionContact"} additional_class={'!px-3 !Py-3 w-full'}></Button>
                 </motion.div>
                 <motion.div className="turstPilot !pt-12"
                     initial={{y:50, opacity:0}}

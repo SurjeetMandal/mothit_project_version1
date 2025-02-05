@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 const Footer = ({ marginTop }) => {
   return (
     <div className={`bg-[var(--secondary)] ${marginTop}`}>
-      <div className="myContainer 2xl:!pr-0 2xl:!pl-0 flex flex-col md:flex-row max-w-[1440px] !mx-auto">
+      <div className="myContainer flex flex-col md:flex-row   max-w-[1640px] !mx-auto">
         <div className="md:w-[70%] lg:w-[50%]">
           <div className="!pt-20 flex items-center gap-2">
             <div className="w-3 h-3 bg-[var(--accent)] rounded-full">
@@ -82,7 +82,7 @@ const Footer = ({ marginTop }) => {
         </div>
       </div>
 
-      <div className="!pt-20 2xl:!pr-0 2xl:!pl-0 flex flex-col-reverse md:flex-row md:justify-between myContainer max-w-[1440px] !mx-auto">
+      <div className="!pt-20 flex flex-col-reverse md:flex-row md:justify-between myContainer max-w-[1640px] !mx-auto">
         <div>
           <p className="text-white text-sm !mb-15">
             Copyright © 2021 Techack. All Rights Reserved.
