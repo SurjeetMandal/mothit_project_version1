@@ -10,6 +10,10 @@ import Calls from './Pages/Calls';
 import Contact2 from "./Pages/Contact2"
 import './index.css';
 import { ToastContainer } from 'react-toastify';
+import SessionContact from './Pages/SessionContact';
+import PremiumTelegram from './Pages/PremiumTelegram';
+import ContactPortfolio from './Pages/ContactPortfolio';
+import CoureseBooking from "./Pages/CoureseBooking"
 
 const App = () => {
   const location = useLocation();
@@ -31,6 +35,10 @@ const App = () => {
         <Route path="/course" element={<Course />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/calls" element={<Calls />} />
+        <Route path='/sessionContact' element={<SessionContact />} />
+        <Route path='/premiumTelegram' element={<PremiumTelegram />} />
+        <Route path='/contactPortfolio' element={<ContactPortfolio />} />
+        <Route path="/courseBooking" element={<CoureseBooking />} />
       </Routes>
     </>
   );

@@ -29,13 +29,14 @@ const NavBar = ({LinkColor}) => {
 
   return (
     <>
-      <div className="myContainer md:flex justify-between items-center hidden fixed w-[100%] z-50 backdrop-filter backdrop-blur-lg">
-  
-        <div className="logo_navItems flex items-center gap-[54px] h-20">
-        
+      <div className="myContainer md:flex justify-center hidden fixed w-[100%] z-50 backdrop-filter backdrop-blur-lg">
+
+        <div className="flex max-w-[1440px] justify-between items-center w-full">
+          <div className="logo_navItems flex items-center gap-[54px] h-20 ">
+          
           <div className="logo">
             <Link to={"/"} className="cursor-pointer">
-              <p className="font-bold text-2xl text-[var(--secondary)]">TWT</p>
+              <p className="font-bold text-2xl text-[var(--accent)]">Trade With Techack</p>
             </Link>
           </div>
 
@@ -46,11 +47,12 @@ const NavBar = ({LinkColor}) => {
             <Link to={"/about"} className={`text-md ${LinkColor}`}>About me</Link>
           </div>
 
-        </div>
+          </div>
 
-        {/* Right Section - Button */}
-        <div>
-          <Button Btn_type={'primary'} Btn_text={'Join Telegram'} href={"/calls"} />
+          {/* Right Section - Button */}
+          <div>
+          <Button Btn_type={'primary'} Btn_text={'💸 Join Premium Telegram'} href={"/calls"} />
+          </div>
         </div>
 
       </div>
@@ -58,9 +60,9 @@ const NavBar = ({LinkColor}) => {
 
       <div className="myContainer h-15 flex justify-between items-center md:hidden">
 
-        <div className="logo w-[80px]">
+        <div className="logo w-[200px]">
           <Link to={"/"} className="cursor-pointer">
-            <p className="font-bold text-xl text-[var(--secondary)]">TWT</p>
+            <p className="font-bold text-xl text-[var(--accent)]">Trade With Techack</p>
           </Link>
         </div>
 
@@ -105,7 +107,7 @@ const NavBar = ({LinkColor}) => {
                 </div>
 
                 <div className="!mt-10" onClick={()=>toggleMenu()}>
-                  <Button Btn_text={"Join Telegram"} Btn_type={"primary"} href={"/calls"}></Button>
+                  <Button Btn_text={"💸 Join Premium Telegram"} Btn_type={"primary"} href={"/calls"}></Button>
                 </div>
 
             </div>

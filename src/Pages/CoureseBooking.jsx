@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from "react"; // Import useState
 import { toast } from 'react-toastify';
 
-const Contact = () => {
+const ContactPortfolio = () => {
   const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false); // State to track if the form is submitting
   const [cooldown, setCooldown] = useState(0); // State to track the cooldown time
@@ -72,16 +72,7 @@ const Contact = () => {
       })
       .then(
         () => {
-          // Trigger PDF download
-          const pdfUrl = '/Course_content.pdf'; // Update this path to your PDF file in the public folder
-          const link = document.createElement('a');
-          link.href = pdfUrl;
-          link.download = 'file.pdf'; // The name of the downloaded file
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-
-          toast.success("Your message was submitted successfully!");
+          toast.success("Our Team will contact you shortly.");
         },
         () => {
           toast.error("Failed to send the message. Please try again.");
@@ -101,7 +92,7 @@ const Contact = () => {
           transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
-          Get Brocher Here
+          Get Your Personalised Course
         </motion.p>
 
         <div className="myContainer !pt-10 md:!pt-20">
@@ -113,13 +104,13 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <form className="md:w-[50%]" onSubmit={sendEmail} ref={form}>
-              <p className="text-3xl text-[var(--text_normal)]">Download Brocher</p>
-              <p className="text-[var(--text_normal)]">Fill all the details to get you Brocher.</p>
+              <p className="text-3xl text-[var(--text_normal)]">Book You Course Seat</p>
+              <p className="text-[var(--text_normal)]">Fill all the detail below to book you seat for free</p>
               <input required type="text" className="bg-white !p-2 rouded-md !mt-6 w-full rounded-sm" placeholder="Full Name" name="user_name" />
               <input required type="tel" className="bg-white !p-2 rouded-md !mt-6 w-full rounded-sm" placeholder="Enter your 10-digit contact number" name="user_phone" />
               <input required type="email" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm" placeholder="Your Email address for follow-up" name="user_email" />
               <select name="user_subject" id="" required placeholder="subject" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm">
-                <option>Course</option>
+                <option>Course Seat Booking</option>
               </select>
               <motion.button
                 type="submit"
@@ -129,7 +120,7 @@ const Contact = () => {
                 viewport={{ once: true }}
                 disabled={isSubmitting} // Disable the button during cooldown
               >
-                {isSubmitting ? `Please wait ${cooldown} seconds...` : "Submit Your Details to Get Brouchur 📑"}
+                {isSubmitting ? `Please wait ${cooldown} seconds...` : "Submit Your Details"}
               </motion.button>
             </form>
 
@@ -158,4 +149,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPortfolio;

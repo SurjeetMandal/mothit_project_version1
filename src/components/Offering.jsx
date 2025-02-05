@@ -4,45 +4,45 @@ import { motion } from "motion/react"
 const offering = [
     {
         Title: '✅ Live Trading Calls',
-        Description: ' Maximize your profits with accurate entry and exit points. '
+        Description: 'Get real-time trading signals for high-accuracy entries & exits.'
     },
     {
         Title: '✅ Daily Market Analysis',
-        Description: ' Maximize your profits with accurate entry and exit points. '
+        Description: 'Stay ahead with expert insigths, charts, and trend analysis.'
     },
     {
         Title: '✅ Proven Strategies',
-        Description: ' Maximize your profits with accurate entry and exit points. '
+        Description: 'Use back-tested trading methods to enhance profitability.'
     },
     {
         Title: '✅ Free Learning Resources',
-        Description: ' Maximize your profits with accurate entry and exit points. '
+        Description: 'Access e-books, webinars and trading tutorials and many more.'
     },
     {
         Title: '✅ Expert Guidance',
-        Description: ' Maximize your profits with accurate entry and exit points. '
+        Description: ' Get mentorship from top traders to refine your strategy.'
     }
 ]
 
 const Offering = () => {
   return (
     <>
-      <motion.div className="myContainer !mt-40 flex flex-col items-center"
+      <motion.div className="myContainer !mt-40 flex flex-col items-center max-w-[1440px] !mx-auto"
         viewport={{once:true}}
         initial={{y:50, opacity:0}}
         whileInView={{y:0, opacity:1}}
         transition={{delay:0.5, duration:0.4}}  
       >
         <img src={offering_img} alt="" />
-        <p className="heading2">
-            What You&apos;ll Get
+        <p className="heading2 text-center leading-11 md:leading-normal !mt-2 md:!mt-0">
+            Maximize Your Trading Profits
         </p>
-        <p className="short_description2">
+        <p className="short_description2 !mt-3 md:!mt-0">
             All the thing&apos;s we promise you.
         </p>
       </motion.div>
 
-      <motion.div className="myContainer"
+      <motion.div className="myContainer max-w-[1440px] !mx-auto"
         viewport={{once:true}}
         initial={{y:50, opacity:0}}
         whileInView={{y:0, opacity:1}}

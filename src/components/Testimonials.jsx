@@ -5,61 +5,132 @@ import shiningStar from "../assets/img/sining star.svg"
 
 const testimonials = [
   {
-      star: 5,
-      name: "Rahul Verma",
-      description: "The service is amazing, and the support team is very helpful!"
-  },
-  {
-      star: 3,
-      name: "Priya Singh",
-      description: "A good learning experience, but some improvements can be made."
-  },
-  {
-      star: 4,
-      name: "Adit Sardar",
-      description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-  },
-  {
-      star: 5,
-      name: "Rahul Verma",
-      description: "The service is amazing, and the support team is very helpful!"
-  },
-  {
-      star: 3,
-      name: "Priya Singh",
-      description: "A good learning experience, but some improvements can be made."
+    star: 5,
+    name: "Amit Sharma",
+    description: "The expert guidance and strategies have transformed my trading skills. Highly recommend TeachAck!"
   },
   {
     star: 4,
-    name: "Adit Sardar",
-    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-},
-{
-    star: 5,
-    name: "Rahul Verma",
-    description: "The service is amazing, and the support team is very helpful!"
-},
-{
+    name: "Neha Gupta",
+    description: "The strategies shared helped me maximize my portfolio returns. Excellent service!"
+  },
+  {
     star: 3,
-    name: "Priya Singh",
-    description: "A good learning experience, but some improvements can be made."
-},
-{
+    name: "Vikram Rao",
+    description: "Decent platform, but could use some more in-depth analysis features."
+  },
+  {
+    star: 5,
+    name: "Priya Malhotra",
+    description: "TeachAck provides outstanding market insights. I've never been more confident in my investments!"
+  },
+  {
     star: 4,
-    name: "Adit Sardar",
-    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-},
-{
+    name: "Rohan Mehta",
+    description: "Customer support is top-notch! They promptly addressed all my concerns."
+  },
+  {
     star: 5,
-    name: "Rahul Verma",
-    description: "The service is amazing, and the support team is very helpful!"
-},
-{
+    name: "Ananya Iyer",
+    description: "Absolutely brilliant strategies! Helped me grow my investments by 50%."
+  },
+  {
     star: 3,
-    name: "Priya Singh",
-    description: "A good learning experience, but some improvements can be made."
-},
+    name: "Sumit Agarwal",
+    description: "Good insights, but I expected more personalized recommendations."
+  },
+  {
+    star: 4,
+    name: "Deepak Choudhury",
+    description: "Very useful platform for beginners. The learning curve is smooth."
+  },
+  {
+    star: 5,
+    name: "Meera Nair",
+    description: "The best financial decision I ever made was joining TeachAck!"
+  },
+  {
+    star: 5,
+    name: "Suresh Pillai",
+    description: "Helped me make informed decisions and avoid common trading mistakes!"
+  },
+  {
+    star: 4,
+    name: "Sakshi Jain",
+    description: "TeachAck offers great tools and analytics. Just needs a mobile app!"
+  },
+  {
+    star: 3,
+    name: "Naveen Kapoor",
+    description: "Okay experience. Some predictions were off, but overall a decent service."
+  },
+  {
+    star: 5,
+    name: "Arjun Sen",
+    description: "Their training modules are top-tier. I feel much more confident trading!"
+  },
+  {
+    star: 4,
+    name: "Pallavi Joshi",
+    description: "Reliable and informative. Some more real-time alerts would be helpful."
+  },
+  {
+    star: 5,
+    name: "Rahul Deshmukh",
+    description: "TeachAck turned me from a novice into a pro investor!"
+  },
+  {
+    star: 3,
+    name: "Tina Verma",
+    description: "Decent platform but could be more interactive."
+  },
+  {
+    star: 4,
+    name: "Vikas Pandey",
+    description: "I appreciate the detailed reports and stock recommendations."
+  },
+  {
+    star: 5,
+    name: "Ishita Sharma",
+    description: "Brilliant strategies! I've doubled my portfolio in just six months."
+  },
+  {
+    star: 4,
+    name: "Abhinav Bhatt",
+    description: "Solid service, but more case studies would be a great addition."
+  },
+  {
+    star: 5,
+    name: "Sunita Menon",
+    description: "TeachAck has saved me from multiple bad investments. Highly recommended!"
+  },
+  {
+    star: 3,
+    name: "Ankur Singh",
+    description: "Content is good, but the user interface could be better."
+  },
+  {
+    star: 5,
+    name: "Devika Mishra",
+    description: "A life-changing platform for traders and investors alike!"
+  },
+  {
+    star: 4,
+    name: "Harish Reddy",
+    description: "The webinars are insightful and packed with useful tips."
+  },
+  {
+    star: 5,
+    name: "Pooja Khatri",
+    description: "I've seen real financial growth thanks to their expert recommendations!"
+  },
+  {
+    star: 4,
+    name: "Manoj Tiwari",
+    description: "A trustworthy service for market insights and stock recommendations."
+  }
 ];
+
 
 const Testimonials = () => {
 
@@ -73,11 +144,11 @@ const Testimonials = () => {
         transition={{delay:0.5, duration:0.4}} 
       >
       <img src={shiningStar} alt="" className="w-15"/>
-        <p className="heading2">
-            Testimonials
+        <p className="heading2 text-center leading-11 !mt-2 md:leading-16 max-w-[1440px] mx-auto">
+          What Our Clients Say - Success Stories That Inspire
         </p>
-        <p className="short_description2 text-center">
-            What our customers and students feel about us.
+        <p className="short_description2 text-center !mt-2">
+          Hear from our satisfied learners about their trading success with Techack.
         </p>
       </motion.div>
 
@@ -94,7 +165,7 @@ const Testimonials = () => {
                 <img src={star} alt="star" key={starIndex} className="w-5 h-5"/>
               ))}
             </div>
-            <p className="text-gray-600 !mt-2 line-clamp-2">{item.description}</p>
+            <p className="text-gray-600 !mt-2 line-clamp-3">{item.description}</p>
             <p className="!mt-2 font-semibold">{item.name}</p>
           </div>
         ))}

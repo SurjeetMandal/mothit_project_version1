@@ -15,7 +15,7 @@ const Button = ({Btn_type, Btn_text, additional_class, href }) => {
                     </Link>
             ) : Btn_type == "secondary" ? (
                 <Link to={href} target="_blank">
-                    <motion.button className={`border-2 !border-[#313131] text-[#313131] !px-6 !py-3 rounded-sm text-sm cursor-pointer ${additional_class}`}
+                    <motion.button className={`border-2 !border-[#313131] text-[#313131] md:!px-6 !py-3 rounded-sm text-sm cursor-pointer ${additional_class}`}
                         whileHover={{scale:1.05}}
                         whileTap={{scale: 0.9}}
                     >{Btn_text}</motion.button>

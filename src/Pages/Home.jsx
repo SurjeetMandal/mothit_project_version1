@@ -2,7 +2,6 @@ import About from "../components/About"
 import Course from "../components/Course"
 import Header from "../components/Header"
 import Offering from "../components/Offering"
-import Services from "../components/Services"
 import Testimonials from "../components/Testimonials"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
@@ -15,7 +14,6 @@ const Home = () => {
       <Offering />
       <Course />
       <About />
-      <Services paddingTop={"!mt-40"} />
       <Testimonials />
       <Footer marginTop={"!mt-40"} />
     </>

@@ -3,13 +3,13 @@ import { motion } from "motion/react"
 
 const WhyJoinArray = [
     {
-        Title: '✅ Daily 5-6 High-Accuracy Option Calls (90% Accuracy) 📈',
+        Title: '✅ Daily 5-6 Option Calls (90% Accuracy) 📈',
     },
     {
         Title: '✅ Exclusive 2-3 Equity Calls for Maximum Gains! 🚀',
     },
     {
-        Title: '✅ Proven Strategies✅ Expert Analysis & Real-Time Trade Updates! 🎯',
+        Title: '✅ Expert Analysis & Real-Time Trade Updates! 🎯',
     },
     {
         Title: '✅ Proven Strategies for Consistent Profits! 💰',

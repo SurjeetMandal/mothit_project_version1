@@ -15,11 +15,11 @@ const Course = () => {
         transition={{delay:0.5, duration:0.4}}  
       >
         <img src={course_vector} alt="" className="w-15"/>
-        <p className="heading2 text-center">
-            Our Trending Course
+        <p className="heading2 text-center leading-11 md:leading-16 max-w-[1440px] !mx-auto !mt-2">
+            Master Futures & Options Trading - Your Path to Success!
         </p>
-        <p className="short_description2 text-center">
-            Start from scratch. Learn step by step & Make your best Portfolio
+        <p className="short_description2 text-center !mt-3">
+            Step-by-Step Guidance to Build a Winning Portfolio and Financial Freedom.
         </p>
       </motion.div>
 
@@ -37,7 +37,7 @@ const Course = () => {
 
             <div className="details md:w-[60%]">
                 <p className="course_name text-3xl md:text-4xl font-medium text-[var(--text_normal)] text-center">
-                    Master Trading with Our Option Trading Course
+                  Transfrom Your Skills with Our Proven Trading Strategies.
                 </p>
 
                 <div className="trust flex w-full !mt-10 !mb-10 md:!mt-0 md:!mb-0 lg:!mb-12 md:h-[50%] items-center">
@@ -55,11 +55,11 @@ const Course = () => {
                                 <img src={star} alt="" />
                             </div>
                         </p>
-                        <p className="rating text-[var(--text_normal)]">Average Ratings</p>
+                        <p className="rating text-[var(--text_normal)] text-center">Rated By Thousands of Traders Worldwide</p>
                     </div>
                 </div>
 
-                <Button Btn_type={""} Btn_text={"View Course"} href={"/course"}></Button>
+                <Button Btn_type={""} Btn_text={"View Full Course Details!"} href={"/course"}></Button>
             </div>
 
         </div>
