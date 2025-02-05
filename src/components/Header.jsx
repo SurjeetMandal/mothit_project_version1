@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 const Header = () => {
     return(
         <>
-            <div className="w-full md:flex hidden scroll-x-0 overflow-hidden 2xl:h-[1010px] max-w-[1440px] !mx-auto">
+            <div className="w-full md:flex hidden scroll-x-0 overflow-hidden 2xl:h-screen max-w-[1440px] !mx-auto">
                 <div className="left_half w-[60%] h-screen 2xl:h-full flex flex-col justify-center">
                     <div className="myContainer !mt-20 !pr-0">
                         <div className="heading">
