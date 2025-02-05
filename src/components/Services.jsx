@@ -74,7 +74,7 @@ const Services = ({paddingTop}) => {
       >
         {
             servicesOffered.map((item, index)=>(
-                <div key={index} className="w-full md:w-[300px] 2xl:w-[400px] bg-white !p-4 shadow-xl rounded-lg border-gray-300 border-2">
+                <div key={index} className="w-full md:w-[300px] 2xl:w-[380px] bg-white !p-4 shadow-xl rounded-lg border-gray-300 border-2">
                     <p className="text-2xl 2xl:text-4xl text-[var(--text_normal)] font-semibold">{item.Title}</p>
                     <ul dangerouslySetInnerHTML={{ __html: item.AllPoints }} className="!mt-4 list-disc 2xl:text-xl list-inside !mb-6"></ul>
                     <Button Btn_text={item.CTA} Btn_type={""} href={item.CTA_Link2} additional_class={"text-sm !bg-green-600 !py-3.5 md:!py-2 2xl:!py-3.5"}></Button>

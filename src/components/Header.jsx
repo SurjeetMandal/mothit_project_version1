@@ -35,7 +35,7 @@ const Header = () => {
                             transition={{delay:0.6}}
                         >
                             <Button Btn_type={"primary"} Btn_text={"👍 Start Trading Journey!"} href={"https://t.me/Tradewithtechack"}></Button>
-                            <Button Btn_type={"secondary"} Btn_text={"🚀 Claim Free 1:1 Expert Session!"} href={`/sessionContact`}></Button>
+                            <Button Btn_type={"secondary"} Btn_text={"🚀 Claim Free 1:1 Expert Session!"} href={'/sessionContact'}></Button>
                         </motion.div>
                         <motion.div className="turstPilot !pt-12"
                             initial={{y:50, opacity:0}}
