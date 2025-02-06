@@ -16,7 +16,7 @@ const Header = () => {
                                 animate={{y:0, opacity:1}}
                                 transition={{delay:0.2}}
                             >
-                                🚀 Master Futures & <span className="text-[var(--secondary)]">Options Trading</span> for Garanteed <span className="text-[var(--secondary)]">Growth!</span>
+                                🚀 Master Futures & <span className="text-[var(--secondary)]">Options Trading</span> for Guaranteed <span className="text-[var(--secondary)]">Growth!</span>
                             </motion.p>
                             <h1 className="hidden">#tradewithtechack #trade_with_techack #techack #trading #option_trading #stock_market #share_market #f&o #swingTrading #stock_trader #learning #bestTradingInstitute #trading_center</h1>
                         </div>
@@ -66,7 +66,7 @@ const Header = () => {
                     animate={{y:0, opacity:1}}
                     transition={{delay:0.7}}    
                 >
-                    🚀 Master Futures & <span className="text-[var(--secondary)]">Options Trading</span> for Garanteed <span className="text-[var(--secondary)]">Growth!</span>
+                    🚀 Master Futures & <span className="text-[var(--secondary)]">Options Trading</span> for Guaranteed <span className="text-[var(--secondary)]">Growth!</span>
                 </motion.p>
                 <motion.p className="short_description text-base !mt-5 text-[var(--text_normal)]"
                     initial={{y:50, opacity:0}}

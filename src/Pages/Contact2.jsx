@@ -101,7 +101,7 @@ const Contact = () => {
           transition={{ duration: 0.4 }}
           viewport={{ once: true }}
         >
-          Get Brocher Here
+          Get Brochure Here
         </motion.p>
 
         <div className="myContainer !pt-10 md:!pt-20">
@@ -113,8 +113,8 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <form className="md:w-[50%]" onSubmit={sendEmail} ref={form}>
-              <p className="text-3xl text-[var(--text_normal)]">Download Brocher</p>
-              <p className="text-[var(--text_normal)]">Fill all the details to get you Brocher.</p>
+              <p className="text-3xl text-[var(--text_normal)]">Download Brochure</p>
+              <p className="text-[var(--text_normal)]">Fill all the details to get you Brochure.</p>
               <input required type="text" className="bg-white !p-2 rouded-md !mt-6 w-full rounded-sm" placeholder="Full Name" name="user_name" />
               <input required type="tel" className="bg-white !p-2 rouded-md !mt-6 w-full rounded-sm" placeholder="Enter your 10-digit contact number" name="user_phone" />
               <input required type="email" className="bg-white !p-2 rouded-md !mt-4 w-full rounded-sm" placeholder="Your Email address for follow-up" name="user_email" />

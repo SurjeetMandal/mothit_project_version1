@@ -7,7 +7,7 @@ const testimonials = [
   {
     star: 5,
     name: "Amit Sharma",
-    description: "The expert guidance and strategies have transformed my trading skills. Highly recommend TeachAck!"
+    description: "The expert guidance and strategies have transformed my trading skills. Highly recommend Techack!"
   },
   {
     star: 4,
@@ -22,7 +22,7 @@ const testimonials = [
   {
     star: 5,
     name: "Priya Malhotra",
-    description: "TeachAck provides outstanding market insights. I've never been more confident in my investments!"
+    description: "Techack provides outstanding market insights. I've never been more confident in my investments!"
   },
   {
     star: 4,
@@ -47,7 +47,7 @@ const testimonials = [
   {
     star: 5,
     name: "Meera Nair",
-    description: "The best financial decision I ever made was joining TeachAck!"
+    description: "The best financial decision I ever made was joining Techack!"
   },
   {
     star: 5,
@@ -57,7 +57,7 @@ const testimonials = [
   {
     star: 4,
     name: "Sakshi Jain",
-    description: "TeachAck offers great tools and analytics. Just needs a mobile app!"
+    description: "Techack offers great tools and analytics. Just needs a mobile app!"
   },
   {
     star: 3,
@@ -77,7 +77,7 @@ const testimonials = [
   {
     star: 5,
     name: "Rahul Deshmukh",
-    description: "TeachAck turned me from a novice into a pro investor!"
+    description: "Techack turned me from a novice into a pro investor!"
   },
   {
     star: 3,
@@ -102,7 +102,7 @@ const testimonials = [
   {
     star: 5,
     name: "Sunita Menon",
-    description: "TeachAck has saved me from multiple bad investments. Highly recommended!"
+    description: "Techack has saved me from multiple bad investments. Highly recommended!"
   },
   {
     star: 3,
